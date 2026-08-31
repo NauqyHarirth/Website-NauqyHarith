@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - NauqyHarith</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,20 +33,89 @@
     </nav>
 
     <div class="container about-container">
-        <div class="about-header">
-            <img src="img/ZnlQS6x4_400x400.jpg" alt="Profile" class="about-avatar">
-            <div class="about-info">
-                <h1>NauqyHarith</h1>
-                <p class="role-title">Video Editor / Motion Designer</p>
-                <p class="bio">Obsessed with music videos & visual rhythm. Bringing tracks to life with clean motion graphics. Open for collaborations, projects, or just a creative chat. Feel free to reach out!</p>
-            </div>
-        </div>
+        <div class="about-grid-layout">
+            
+            <!-- KOLOM KIRI: Profile & Showreel Video -->
+            <div class="about-left-col">
+                <div class="about-profile-card">
+                    <img src="img/ZnlQS6x4_400x400.jpg" alt="Nauqy Harith" class="about-avatar">
+                    <div class="about-profile-meta">
+                        <h1>NauqyHarith</h1>
+                        <p class="role-title">Motion Graphics Artist, 2D Animator, 2D Compositor</p>
+                    </div>
+                </div>
 
-        <div class="showreel-section">
-            <h2>Showreel</h2>
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/FhmHBJkXxto" title="Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- Showreel Video YouTube -->
+                <div class="showreel-section">
+                    <h2 class="showreel-heading">Showreel</h2>
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/bpfGElbDBjI" title="Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
+
+            <!-- KOLOM KANAN: Bio & Experience (JP & EN) -->
+            <div class="about-right-col">
+                
+                <!-- Japanese Bio & Experience -->
+                <div class="bio-section">
+                    <h3 class="bio-heading">自己紹介</h3>
+                    <p class="bio-text">インドネシアを拠点に活動している2Dアーティスト兼映像クリエイターです。<br>モーショングラフィックス、コンポジット（撮影・合成処理）をはじめとする映像・ビジュアル制作全般を強みとしています。</p>
+                    <p class="bio-text">主に「歌ってみた（Utaite）」などのミュージックビデオ（MV）制作に注力しており、楽曲の世界観を最大限に引き出す映像表現を追求しています。また、MV制作だけでなく、映画や商業CMにおけるフリーランスのモーショングラフィックスデザイナー／コンポジターとしても実績があります。</p>
+
+                    <div class="exp-block">
+                        <h4 class="block-title">| 実績・受賞歴 |</h4>
+                        
+                        <div class="exp-group">
+                            <p class="exp-category-title">🏆 受賞歴 (Awards)</p>
+                            <ul class="exp-list">
+                                <li>・3rd Place — Multiverse Vistas Honkai: Star Rail Contest 2026 (Animation 部門)</li>
+                                <li>・3rd Place — Multiverse Vistas Honkai: Star Rail Contest 2025 (AMV/MAD 部門)</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-group">
+                            <p class="exp-category-title">🎨 主な実績・参加経歴 (Selected Experience)</p>
+                            <ul class="exp-list">
+                                <li>・KADOKAWA Manga Artist 参加 (2026)</li>
+                                <li>・MMGC (Motion Movie Graphics Contest) 参加 (2025)</li>
+                                <li>・映画・商業CM向け フリーランス モーショングラフィックス＆コンポジティング業務</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- English Translation -->
+                <div class="bio-section en-section">
+                    <hr class="section-divider">
+                    <h3 class="bio-heading">About Me</h3>
+                    <p class="bio-text">I am a 2D artist and visual creator based in Indonesia, specializing in motion graphics, compositing, and visual production.</p>
+                    <p class="bio-text">My primary focus lies in creating immersive Music Videos (MV) for the Utaite community. Alongside my MV work, I have extensive professional experience as a freelance motion graphics designer and compositor for commercial advertisements and local film productions.</p>
+
+                    <div class="exp-block">
+                        <h4 class="block-title">| Selected Experience & Awards |</h4>
+                        
+                        <div class="exp-group">
+                            <p class="exp-category-title">🏆 Awards & Recognitions</p>
+                            <ul class="exp-list">
+                                <li>・3rd Place — Honkai: Star Rail "Multiverse Vistas" Contest 2026 (Animation Category)</li>
+                                <li>・3rd Place — Honkai: Star Rail "Multiverse Vistas" Contest 2025 (AMV/MAD Category)</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-group">
+                            <p class="exp-category-title">🎨 Professional & Creative Highlights</p>
+                            <ul class="exp-list">
+                                <li>・Participant — KADOKAWA Manga Artist Contest (2026)</li>
+                                <li>・Participant — MMGC / Motion Movie Graphics Contest (2025)</li>
+                                <li>・Freelance Motion Graphics Designer & Compositor for commercial ads and film projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
     
