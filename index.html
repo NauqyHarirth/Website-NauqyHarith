@@ -6,7 +6,7 @@
     <title>NauqyHarith - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,20 +42,28 @@
                 <!-- Tulisan Portofolio kecil di atas -->
                 <p class="portfolio-label">PORTOFOLIO</p>
                 
-                <!-- Nama kamu jadi Teks Paling Gede -->
+                <!-- Nama Utama -->
                 <h1 class="page-title">NauqyHarith</h1>
                 
-                <div class="profile-details">
-                    <p class="name-highlight">@qyrithh</p>
-                    <p class="roles">Direction. GraphicDesign. MotionDesign. Video Editor.</p>
-                    <br>
-                    
+                <!-- Role / Keahlian -->
+                <p class="profile-role">Motion Graphics Artist, 2D Animator, 2D Compositor</p>
+                
+                <!-- Social & Contact -->
+                <div class="profile-contacts">
                     <p class="contact-email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nauqyharith@gmail.com" target="_blank" rel="noopener noreferrer">nauqyharith@gmail.com</a>
+                    </p>
+
+                    <!-- Tautan X (Twitter) -->
+                    <p class="contact-email">
+                        <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        <a href="https://x.com/qyrithh" target="_blank" rel="noopener noreferrer">@qyrithh</a>
                     </p>
 
                     <!-- Tautan VGen -->
@@ -68,81 +76,440 @@
         </header>
 
         <div class="filter-section">
-            <button class="filter-btn active">Works</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="motion-graphics">Motion Graphics</button>
+            <button class="filter-btn" data-filter="animation">Animation</button>
+            <button class="filter-btn" data-filter="compositing">Compositing</button>
+            <button class="filter-btn" data-filter="3d">3D</button>
+            <button class="filter-btn" data-filter="2d-visual-effect">2D Visual Effect</button>
         </div>
 
-        <!-- ================= KARTU PORTFOLIO ================= -->
-       <!-- ================= KARTU PORTFOLIO ================= -->
+        <!-- ================= KARTU PORTFOLIO (NEWEST ACCORDING TO YOUTUBE UPLOAD) ================= -->
         <div class="portfolio-grid">
             
-            <!-- Item Portfolio 1 (Sudah dipasang data-img untuk 3 screenshot) -->
+            <!-- 1. Departure (BACK-ON) / covered by DTTO. Airlines -->
             <div class="card project-card" 
                  data-vid="FhmHBJkXxto" 
-                 data-title="Departure — DTTO. Airlines" 
-                 data-sub="Original: BACK-ON — Covered by DTTO. Airlines" 
-                 data-roles="Motion Graphics, Typography" 
-                 data-img1="img/Departure (BACK-ON) _ covered by DTTO. Airlines 0-32 screenshot.png" 
-                 data-img2="img/Departure (BACK-ON) _ covered by DTTO. Airlines 0-46 screenshot.png" 
-                 data-img3="img/Departure (BACK-ON) _ covered by DTTO. Airlines 1-4 screenshot.png">
+                 data-title="Departure (BACK-ON) / covered by DTTO. Airlines" 
+                 data-sub="dtto. — Original: BACK-ON" 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Aug 2026"
+                 data-imgs="img/Departure (BACK-ON) _ covered by DTTO. Airlines 0-32 screenshot.png|img/Departure (BACK-ON) _ covered by DTTO. Airlines 0-46 screenshot.png|img/Departure (BACK-ON) _ covered by DTTO. Airlines 1-4 screenshot.png">
                 <div class="thumbnail-container">
-                    <img src="https://img.youtube.com/vi/FhmHBJkXxto/maxresdefault.jpg" alt="Thumbnail 1">
+                    <img src="https://img.youtube.com/vi/FhmHBJkXxto/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/FhmHBJkXxto/hqdefault.jpg'" alt="Departure (BACK-ON)">
                     <div class="play-overlay">▶</div>
                 </div>
                 <div class="card-info">
-                    <p class="card-subtitle">Original: BACK-ON — Covered by DTTO. Airlines</p>
-                    <h3 class="card-title">Departure — DTTO. Airlines</h3>
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">dtto. </p>
+                        <span class="card-year-badge">Aug 2026</span>
+                    </div>
+                    <h3 class="card-title">Departure (BACK-ON) / covered by DTTO. Airlines</h3>
                     <div class="card-tags">
                         <span>Motion Graphics</span>
-                        <span>Typography</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Item Portfolio 2 -->
-            <div class="card project-card" 
-                 data-vid="VIDEO_ID_KAMU_2" 
-                 data-title="Inferno Love Letter — tuki." 
-                 data-sub="Confession Arc — Ao no Hako Ch. 102-103" 
-                 data-roles="MMV, Manga-inspired"
-                 data-img1="img/ss4.jpg" 
-                 data-img2="img/ss5.jpg" 
-                 data-img3="img/ss6.jpg">
-                <div class="thumbnail-container">
-                    <img src="https://img.youtube.com/vi/VIDEO_ID_KAMU_2/maxresdefault.jpg" alt="Thumbnail 2">
-                    <div class="play-overlay">▶</div>
-                </div>
-                <div class="card-info">
-                    <p class="card-subtitle">Confession Arc — Ao no Hako Ch. 102-103</p>
-                    <h3 class="card-title">Inferno Love Letter — tuki.</h3>
-                    <div class="card-tags">
-                        <span>MMV</span>
-                        <span>Manga-inspired</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Item Portfolio 3 -->
+            <!-- 2. DINO/ぐさお・三枝りんcover -->
             <div class="card project-card" 
-                 data-vid="VIDEO_ID_KAMU_3" 
-                 data-title="Dawnbreaker — Will Stetson" 
-                 data-sub="Wuthering Waves 3.0 Theme Song" 
-                 data-roles="MV Direction, Compositing"
-                 data-img1="img/ss7.jpg" 
-                 data-img2="img/ss8.jpg" 
-                 data-img3="img/ss9.jpg">
+                 data-vid="2g1cZXU_Vw0" 
+                 data-title="DINO / ぐさお・三枝りん cover" 
+                 data-sub="ぐさお / ぐさりん" 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Aug 2026"
+                 data-imgs="img/screens/kolom 2/DINO_ぐさお・三枝りんcover 0-19 screenshot.png|img/screens/kolom 2/DINO_ぐさお・三枝りんcover 1-5 screenshot.png|img/screens/kolom 2/DINO_ぐさお・三枝りんcover 1-8 screenshot.png">
                 <div class="thumbnail-container">
-                    <img src="https://img.youtube.com/vi/VIDEO_ID_KAMU_3/maxresdefault.jpg" alt="Thumbnail 3">
+                    <img src="https://img.youtube.com/vi/2g1cZXU_Vw0/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/2g1cZXU_Vw0/hqdefault.jpg'" alt="DINO cover">
                     <div class="play-overlay">▶</div>
                 </div>
                 <div class="card-info">
-                    <p class="card-subtitle">Wuthering Waves 3.0 Theme Song</p>
-                    <h3 class="card-title">Dawnbreaker — Will Stetson</h3>
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">ぐさお / ぐさりん</p>
+                        <span class="card-year-badge">Aug 2026</span>
+                    </div>
+                    <h3 class="card-title">DINO / ぐさお・三枝りん cover</h3>
                     <div class="card-tags">
-                        <span>MV Direction</span>
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. MikanVT - Still Here (Original Song) Official Music Video -->
+            <div class="card project-card" 
+                 data-vid="xCPjjxYaqMY" 
+                 data-title="MikanVT - Still Here (Original Song) Official Music Video" 
+                 data-sub="MikanVT" 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Jul 2026"
+                 data-imgs="img/screens/kolom 3/MikanVT - Still Here (Original Song) Official Music Video 0-22 screenshot.png|img/screens/kolom 3/MikanVT - Still Here (Original Song) Official Music Video 0-59 screenshot.png|img/screens/kolom 3/MikanVT - Still Here (Original Song) Official Music Video 1-10 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/xCPjjxYaqMY/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/xCPjjxYaqMY/hqdefault.jpg'" alt="MikanVT - Still Here">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">MikanVT</p>
+                        <span class="card-year-badge">Jul 2026</span>
+                    </div>
+                    <h3 class="card-title">MikanVT - Still Here (Original Song) Official Music Video</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. 33550337回目の別れ  #multiversevistas -->
+            <div class="card project-card" 
+                 data-vid="i_HF_0tEOlM" 
+                 data-title="33550337回目の別れ  #multiversevistas" 
+                 data-sub="Qyrith" 
+                 data-roles="Animation" 
+                 data-category="animation"
+                 data-date="Jun 2026"
+                 data-imgs="img/screens/i_HF_0tEOlM_1.jpg|img/screens/i_HF_0tEOlM_2.jpg|img/screens/i_HF_0tEOlM_3.jpg">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/i_HF_0tEOlM/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/i_HF_0tEOlM/hqdefault.jpg'" alt="33550337回目の別れ">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">NauqyHarith</p>
+                        <span class="card-year-badge">Jun 2026</span>
+                    </div>
+                    <h3 class="card-title">33550337回目の別れ  #multiversevistas</h3>
+                    <div class="card-tags">
+                        <span>Animation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. どりーみんチュチュ (emon(Tes.)) / covered by REJECT GIRLS feat.春茶 -->
+            <div class="card project-card" 
+                 data-vid="qpeLXZKYrtw" 
+                 data-title="どりーみんチュチュ (emon(Tes.)) / covered by REJECT GIRLS feat.春茶" 
+                 data-sub="dtto." 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Feb 2026"
+                 data-imgs="img/screens/kolom 5/どりーみんチュチュ (emon(Tes.)) _ covered by REJECT GIRLS feat.春茶 0-37 screenshot.png|img/screens/kolom 5/どりーみんチュチュ (emon(Tes.)) _ covered by REJECT GIRLS feat.春茶 0-59 screenshot.png|img/screens/kolom 5/どりーみんチュチュ (emon(Tes.)) _ covered by REJECT GIRLS feat.春茶 1-23 screenshot.png|img/screens/kolom 5/どりーみんチュチュ (emon(Tes.)) _ covered by REJECT GIRLS feat.春茶 3-11 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/qpeLXZKYrtw/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/qpeLXZKYrtw/hqdefault.jpg'" alt="どりーみんチュチュ">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">dtto.</p>
+                        <span class="card-year-badge">Feb 2026</span>
+                    </div>
+                    <h3 class="card-title">どりーみんチュチュ (emon(Tes.)) / covered by REJECT GIRLS feat.春茶</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. QURSE - 'NO CROWN' M/V -->
+            <div class="card project-card" 
+                 data-vid="6yZG0yJ7L4E" 
+                 data-title="QURSE - 'NO CROWN' M/V" 
+                 data-sub="QURSE" 
+                 data-roles="Motion Graphics, Compositing, 3D" 
+                 data-category="motion-graphics,compositing,3d"
+                 data-date="Jan 2026"
+                 data-imgs="img/screens/kolom 6/QURSE - 'NO CROWN' M_V 1-20 screenshot.png|img/screens/kolom 6/QURSE - 'NO CROWN' M_V 1-32 screenshot.png|img/screens/kolom 6/QURSE - 'NO CROWN' M_V 2-58 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/6yZG0yJ7L4E/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/6yZG0yJ7L4E/hqdefault.jpg'" alt="QURSE - NO CROWN">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">QURSE</p>
+                        <span class="card-year-badge">Jan 2026</span>
+                    </div>
+                    <h3 class="card-title">QURSE - 'NO CROWN' M/V</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                        <span>Compositing</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Together Forever with Toyota | Menemani Keluarga dari Generasi ke Generasi -->
+            <div class="card project-card" 
+                 data-vid="g1ehtek2IWQ" 
+                 data-title="Together Forever with Toyota | Menemani Keluarga dari Generasi ke Generasi" 
+                 data-sub="ToyotaIndonesia" 
+                 data-roles="Compositing" 
+                 data-category="compositing"
+                 data-date="Dec 2025"
+                 data-imgs="img/screens/g1ehtek2IWQ_1.jpg|img/screens/g1ehtek2IWQ_2.jpg|img/screens/g1ehtek2IWQ_3.jpg">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/g1ehtek2IWQ/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/g1ehtek2IWQ/hqdefault.jpg'" alt="Together Forever with Toyota">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">ToyotaIndonesia</p>
+                        <span class="card-year-badge">Dec 2025</span>
+                    </div>
+                    <h3 class="card-title">Together Forever with Toyota | Menemani Keluarga dari Generasi ke Generasi</h3>
+                    <div class="card-tags">
                         <span>Compositing</span>
                     </div>
                 </div>
             </div>
+
+            <!-- 8. [WORKS] DTTO. UNITY FES X DELTA FORCE -->
+            <div class="card project-card" 
+                 data-vid="X9gVSDJkkY8" 
+                 data-title="[WORKS] DTTO. UNITY FES X DELTA FORCE" 
+                 data-sub="Qyrith" 
+                 data-roles="Motion Graphics, 3D" 
+                 data-category="motion-graphics,3d"
+                 data-date="Nov 2025"
+                 data-imgs="img/screens/kolom 8/[WORKS] DTTO. UNITY FES X DELTA FORCE 0-8 screenshot.png|img/screens/kolom 8/[WORKS] DTTO. UNITY FES X DELTA FORCE 0-11 screenshot.png|img/screens/kolom 8/[WORKS] DTTO. UNITY FES X DELTA FORCE 0-15 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/X9gVSDJkkY8/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/X9gVSDJkkY8/hqdefault.jpg'" alt="DTTO. UNITY FES X DELTA FORCE">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">dtto. </p>
+                        <span class="card-year-badge">Nov 2025</span>
+                    </div>
+                    <h3 class="card-title">[WORKS] DTTO. UNITY FES X DELTA FORCE</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. [WORKS] DTTO. UNITY FES X APEX LEGENDS -->
+            <div class="card project-card" 
+                 data-vid="qe-XKx6y-wA" 
+                 data-title="[WORKS] DTTO. UNITY FES X APEX LEGENDS" 
+                 data-sub="Qyrith" 
+                 data-roles="Motion Graphics, 3D" 
+                 data-category="motion-graphics,3d"
+                 data-date="Nov 2025"
+                 data-imgs="img/screens/kolom 9/[WORKS] DTTO. UNITY FES X APEX LEGENDS 0-3 screenshot.png|img/screens/kolom 9/[WORKS] DTTO. UNITY FES X APEX LEGENDS 0-10 screenshot.png|img/screens/kolom 9/[WORKS] DTTO. UNITY FES X APEX LEGENDS 0-11 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/qe-XKx6y-wA/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/qe-XKx6y-wA/hqdefault.jpg'" alt="DTTO. UNITY FES X APEX LEGENDS">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">dtto. </p>
+                        <span class="card-year-badge">Nov 2025</span>
+                    </div>
+                    <h3 class="card-title">[WORKS] DTTO. UNITY FES X APEX LEGENDS</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Fansa / METAL ver. - Raki Kazuki -->
+            <div class="card project-card" 
+                 data-vid="5UcnUwIg4Y4" 
+                 data-title="Fansa / METAL ver. - Raki Kazuki" 
+                 data-sub="Raki Kazuki Ch." 
+                 data-roles="Motion Graphics, 3D" 
+                 data-category="motion-graphics,3d"
+                 data-date="Aug 2025"
+                 data-imgs="img/screens/kolom 10/Fansa _ METAL ver. - Raki Kazuki 0-39 screenshot.png|img/screens/kolom 10/Fansa _ METAL ver. - Raki Kazuki 0-51 screenshot.png|img/screens/kolom 10/Fansa _ METAL ver. - Raki Kazuki 0-53 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/5UcnUwIg4Y4/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/5UcnUwIg4Y4/hqdefault.jpg'" alt="Fansa / METAL ver.">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">Raki Kazuki Ch.</p>
+                        <span class="card-year-badge">Aug 2025</span>
+                    </div>
+                    <h3 class="card-title">Fansa / METAL ver. - Raki Kazuki</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Zombie Land Saga - Franchouchou Saga Jihen【OUTBREAK COVER】 -->
+            <div class="card project-card" 
+                 data-vid="xwogRy-rq_M" 
+                 data-title="Zombie Land Saga - Franchouchou Saga Jihen【OUTBREAK COVER】" 
+                 data-sub="Maple【GlitchStars】" 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Aug 2025"
+                 data-imgs="img/screens/kolom 11/Zombie Land Saga - Franchouchou Saga Jihen【OUTBREAK COVER】 0-33 screenshot.png|img/screens/kolom 11/Zombie Land Saga - Franchouchou Saga Jihen【OUTBREAK COVER】 0-42 screenshot.png|img/screens/kolom 11/Zombie Land Saga - Franchouchou Saga Jihen【OUTBREAK COVER】 1-27 screenshot (1).png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/xwogRy-rq_M/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/xwogRy-rq_M/hqdefault.jpg'" alt="Zombie Land Saga cover">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">Maple【GlitchStars】</p>
+                        <span class="card-year-badge">Aug 2025</span>
+                    </div>
+                    <h3 class="card-title">Zombie Land Saga - Franchouchou Saga Jihen【OUTBREAK COVER】</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Welcoming ALL into the GR-Verse | Toyota GAZOO Racing Indonesia -->
+            <div class="card project-card" 
+                 data-vid="_McWg3eO9ao" 
+                 data-title="Welcoming ALL into the GR-Verse | Toyota GAZOO Racing Indonesia" 
+                 data-sub="ToyotaIndonesia" 
+                 data-roles="Compositing, 2D Visual Effect" 
+                 data-category="compositing,2d-visual-effect"
+                 data-date="Jul 2025"
+                 data-imgs="img/screens/kolom 12/Welcoming ALL into the GR-Verse _ Toyota GAZOO Racing Indonesia 0-18 screenshot.png|img/screens/kolom 12/Welcoming ALL into the GR-Verse _ Toyota GAZOO Racing Indonesia 0-20 screenshot.png|img/screens/kolom 12/Welcoming ALL into the GR-Verse _ Toyota GAZOO Racing Indonesia 0-23 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/_McWg3eO9ao/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/_McWg3eO9ao/hqdefault.jpg'" alt="Welcoming ALL into the GR-Verse">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">ToyotaIndonesia</p>
+                        <span class="card-year-badge">Jul 2025</span>
+                    </div>
+                    <h3 class="card-title">Welcoming ALL into the GR-Verse | Toyota GAZOO Racing Indonesia</h3>
+                    <div class="card-tags">
+                        <span>Compositing</span>
+                        <span>2D Visual Effect</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. 【ORIGINAL MV】"HOT STUFF" -->
+            <div class="card project-card" 
+                 data-vid="cEGTUskuW8c" 
+                 data-title="【ORIGINAL MV】\"HOT STUFF\"" 
+                 data-sub="Airi Viridis Ch. 【V-Dere】" 
+                 data-roles="Motion Graphics, 3D" 
+                 data-category="motion-graphics,3d"
+                 data-date="Jun 2025"
+                 data-imgs="img/screens/kolom 13/【ORIGINAL MV】_HOT STUFF_ 0-3 screenshot.png|img/screens/kolom 13/【ORIGINAL MV】_HOT STUFF_ 0-36 screenshot.png|img/screens/kolom 13/【ORIGINAL MV】_HOT STUFF_ 2-11 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/cEGTUskuW8c/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/cEGTUskuW8c/hqdefault.jpg'" alt="HOT STUFF">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">Airi Viridis Ch. 【V-Dere】</p>
+                        <span class="card-year-badge">Jun 2025</span>
+                    </div>
+                    <h3 class="card-title">【ORIGINAL MV】"HOT STUFF"</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. Cendrillon (サンドリヨン) / ver. Kattsun x Meidusa - Role-swapped (cover) -->
+            <div class="card project-card" 
+                 data-vid="BkPptO4IDmI" 
+                 data-title="Cendrillon (サンドリヨン) / ver. Kattsun x Meidusa - Role-swapped (cover)" 
+                 data-sub="Meidusa" 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Apr 2025"
+                 data-imgs="img/screens/kolom 14/Cendrillon (サンドリヨン) _ ver. Kattsun x Meidusa - Role-swapped (cover) 0-45 screenshot.png|img/screens/kolom 14/Cendrillon (サンドリヨン) _ ver. Kattsun x Meidusa - Role-swapped (cover) 1-13 screenshot.png|img/screens/kolom 14/Cendrillon (サンドリヨン) _ ver. Kattsun x Meidusa - Role-swapped (cover) 4-2 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/BkPptO4IDmI/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/BkPptO4IDmI/hqdefault.jpg'" alt="Cendrillon cover">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">Meidusa</p>
+                        <span class="card-year-badge">Apr 2025</span>
+                    </div>
+                    <h3 class="card-title">Cendrillon (サンドリヨン) / ver. Kattsun x Meidusa - Role-swapped (cover)</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. Deal With The Devil (Kakegurui 賭ケグルイOP)【Cover By REM Kanashibari】 -->
+            <div class="card project-card" 
+                 data-vid="ivYSCUy8R4E" 
+                 data-title="Deal With The Devil (Kakegurui 賭ケグルイOP)【Cover By REM Kanashibari】" 
+                 data-sub="REM Kanashibari Ch.【V4Mirai】" 
+                 data-roles="Motion Graphics" 
+                 data-category="motion-graphics"
+                 data-date="Feb 2025"
+                 data-imgs="img/screens/kolom 15/Deal With The Devil (Kakegurui 賭ケグルイOP)【Cover By REM Kanashibari】 0-29 screenshot.png|img/screens/kolom 15/Deal With The Devil (Kakegurui 賭ケグルイOP)【Cover By REM Kanashibari】 0-54 screenshot.png|img/screens/kolom 15/Deal With The Devil (Kakegurui 賭ケグルイOP)【Cover By REM Kanashibari】 1-4 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/ivYSCUy8R4E/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/ivYSCUy8R4E/hqdefault.jpg'" alt="Deal With The Devil">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">REM Kanashibari Ch.【V4Mirai】</p>
+                        <span class="card-year-badge">Feb 2025</span>
+                    </div>
+                    <h3 class="card-title">Deal With The Devil (Kakegurui 賭ケグルイOP)【Cover By REM Kanashibari】</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16. 【Original Song】ON THIS STAGE!! 【Seion Aera/星音アエラ】 -->
+            <div class="card project-card" 
+                 data-vid="7lMpxKSnq-Q" 
+                 data-title="【Original Song】ON THIS STAGE!! 【Seion Aera/星音アエラ】" 
+                 data-sub="Seion Aera /星音アエラ Ch." 
+                 data-roles="Motion Graphics, 3D" 
+                 data-category="motion-graphics,3d"
+                 data-date="Dec 2024"
+                 data-imgs="img/screens/kolom 16/【Original Song】ON THIS STAGE!! 【Seion Aera_星音アエラ】 0-19 screenshot.png|img/screens/kolom 16/【Original Song】ON THIS STAGE!! 【Seion Aera_星音アエラ】 0-22 screenshot.png|img/screens/kolom 16/【Original Song】ON THIS STAGE!! 【Seion Aera_星音アエラ】 0-50 screenshot.png">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/7lMpxKSnq-Q/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/7lMpxKSnq-Q/hqdefault.jpg'" alt="ON THIS STAGE!!">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-meta-row">
+                        <p class="card-subtitle">Seion Aera /星音アエラ Ch.</p>
+                        <span class="card-year-badge">Dec 2024</span>
+                    </div>
+                    <h3 class="card-title">【Original Song】ON THIS STAGE!! 【Seion Aera/星音アエラ】</h3>
+                    <div class="card-tags">
+                        <span>Motion Graphics</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= MORE BUTTON KE PLAYLIST YOUTUBE ================= -->
+        <div class="more-section">
+            <a href="https://youtube.com/playlist?list=PLntUG5BnzU-eht_1J1ffP5GJwu-Y_T7Qa&si=ZCCRZ-7hcZqtL5lVv" target="_blank" rel="noopener noreferrer" class="more-btn">
+                <svg class="yt-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                </svg>
+                <span>View More on YouTube Playlist</span>
+                <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
         </div>
     </div>
 
@@ -152,7 +519,10 @@
             <button class="close-modal">&times;</button>
             <img id="modalBanner" src="" alt="Banner Project" class="modal-banner">
             <div class="modal-body">
-                <h2 id="modalTitle">Judul Video</h2>
+                <div class="modal-title-row">
+                    <h2 id="modalTitle">Judul Video</h2>
+                    <span id="modalYear" class="modal-year-badge">2026</span>
+                </div>
                 <p id="modalSub" class="modal-subtitle">Deskripsi detail project</p>
                 
                 <p class="role-heading">担当業務 (Roles):</p>
@@ -164,12 +534,15 @@
                     <iframe id="modalVideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-                <!-- Bagian Screenshot di bawah video -->
-                <h3 id="galleryHeading" class="gallery-heading">Screenshots & Breakdown</h3>
-                <div id="modalGallery" class="modal-gallery">
-                    <img id="modalImg1" src="img/Departure (BACK-ON) _ covered by DTTO. Airlines 0-32 screenshot.png" alt="Screenshot 1">
-                    <img id="modalImg2" src="img/Departure (BACK-ON) _ covered by DTTO. Airlines 0-46 screenshot.png" alt="Screenshot 2">
-                    <img id="modalImg3" src="img/Departure (BACK-ON) _ covered by DTTO. Airlines 1-4 screenshot.png" alt="Screenshot 3">
+                <!-- Bagian Screenshot di bawah video (Scrolling Kanan-Kiri) -->
+                <div class="gallery-header-row">
+                    <h3 id="galleryHeading" class="gallery-heading">Screenshots & Breakdown</h3>
+                    <span class="scroll-hint">← Scroll →</span>
+                </div>
+                <div class="gallery-wrapper">
+                    <div id="modalGallery" class="modal-gallery">
+                        <!-- Gambar otomatis dirender secara dinamis oleh JavaScript -->
+                    </div>
                 </div>
             </div>
         </div>
