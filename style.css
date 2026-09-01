@@ -1,3 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 :root {
     --bg-main: #121212; 
     --bg-card: rgba(37, 37, 45, 0.6); 
@@ -10,6 +20,8 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 100%;
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: var(--bg-main);
     color: var(--text-primary);
@@ -603,8 +615,10 @@ body.light-mode {
     position: fixed; 
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     z-index: -1; 
     overflow: hidden;
     pointer-events: none; 
@@ -722,7 +736,7 @@ body:not(.light-mode) .vgen-icon {
 
 /* Background hitam transparan nutupin layar */
 .modal-overlay {
-    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.85);
     z-index: 1000; display: flex; justify-content: center; align-items: center;
     opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
@@ -899,14 +913,186 @@ body.light-mode .modal-gallery::-webkit-scrollbar-thumb:hover {
     border-color: var(--text-accent);
 }
 
-/* Di layar sempit (HP) */
-@media (max-width: 600px) {
+/* ================= RESPONSIVE DESIGN (MOBILE & TABLET) ================= */
+
+/* Tablet & Layar Menengah */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+    .nav-links a {
+        margin-left: 16px;
+        font-size: 0.85rem;
+    }
+    .theme-toggle {
+        margin-left: 12px;
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 32px 18px;
+    }
+
+    /* Profil Hero di Home */
+    .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+    .home-avatar {
+        width: 96px;
+        height: 96px;
+    }
+    .page-title {
+        font-size: 2.2rem;
+        margin: 0 0 6px 0;
+        word-break: break-word;
+    }
+    .portfolio-label {
+        font-size: 0.75rem;
+        letter-spacing: 2.5px;
+    }
+    .profile-role, 
+    .profile-details .name-highlight {
+        font-size: 0.95rem;
+        margin: 0 0 12px 0;
+    }
+    .profile-contacts .contact-email {
+        font-size: 0.88rem;
+    }
+
+    /* Filter & Grid Card */
+    .filter-section {
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 0.82rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .card-info {
+        padding: 14px 4px;
+    }
+    .card-meta-row, .card-title, .card-tags {
+        padding: 0 8px;
+    }
+    .card-title {
+        font-size: 1.02rem;
+    }
+
+    .more-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Halaman About */
+    .about-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .about-left-col {
+        position: static;
+    }
+    .about-profile-card {
+        gap: 16px;
+    }
+    .about-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .about-profile-meta h1 {
+        font-size: 1.7rem;
+    }
+
+    /* Modal Popup */
+    .modal-content {
+        width: 95%;
+        max-height: 92vh;
+        border-radius: 14px;
+    }
+    .modal-banner {
+        height: 200px;
+    }
     .modal-body {
         padding: 24px 18px;
     }
+    .modal-title-row h2 {
+        font-size: 1.45rem;
+    }
+    .modal-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
     .modal-gallery img {
-        flex: 0 0 240px;
-        width: 240px;
-        height: 140px;
+        flex: 0 0 230px;
+        width: 230px;
+        height: 135px;
+    }
+}
+
+/* Smartphone Layar Kecil (<= 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 14px 14px;
+    }
+    .nav-links a {
+        margin-left: 12px;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+    .theme-toggle {
+        margin-left: 8px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 24px 14px;
+    }
+
+    .profile-section {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+    .home-avatar {
+        width: 84px;
+        height: 84px;
+    }
+    .page-title {
+        font-size: 1.85rem;
+    }
+    .profile-role, 
+    .profile-details .name-highlight {
+        font-size: 0.9rem;
+    }
+    .profile-contacts .contact-email {
+        font-size: 0.84rem;
+        gap: 7px;
+    }
+    .contact-email a {
+        word-break: break-all;
+    }
+
+    .filter-btn {
+        padding: 5px 10px;
+        font-size: 0.78rem;
+    }
+
+    .modal-body {
+        padding: 18px 14px;
+    }
+    .modal-title-row h2 {
+        font-size: 1.25rem;
+    }
+    .modal-gallery img {
+        flex: 0 0 200px;
+        width: 200px;
+        height: 120px;
     }
 }
