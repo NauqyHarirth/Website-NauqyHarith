@@ -97,7 +97,8 @@ if (projectCards.length > 0) {
                     modalGallery.innerHTML = '';
                     images.forEach((src, idx) => {
                         const img = document.createElement('img');
-                        img.src = src;
+                        // Encode # and special characters so browser doesn't treat # as fragment identifier
+                        img.src = src.replace(/#/g, '%23');
                         img.alt = `Screenshot ${idx + 1}`;
                         img.loading = 'lazy';
                         modalGallery.appendChild(img);
